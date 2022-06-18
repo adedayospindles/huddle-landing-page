@@ -82,3 +82,86 @@ body {
   width: 50%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #ff7f7f;
+  padding: 3em;
+}
+
+.regform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.regform.content {
+  width: 100%;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.content p {
+  color: #fff;
+  font-size: 13px;
+}
+
+.regform.form {
+  width: 100%;
+}
+
+form {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+h3.freetry {
+  border: 1px solid #1877f2;
+  border-radius: 6px;
+  padding: 10px;
+  background: #1877f2;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.submitBtn:focus {
+  border: 1px solid #bbb;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 525px) {
+  .container {
+    background-image: url("images/bg-intro-mobile.png");
+    flex-direction: column;
+  }
+
+  form input {
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    font-weight: 400;
+    font-size: 65%;
+  }
+
+  .submitBtn {
+    font-size: 65%;
+  }
+}
