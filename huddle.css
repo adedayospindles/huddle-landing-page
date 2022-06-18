@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: ;
 }
 
 h1,
@@ -16,7 +15,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: red;
+ 
 }
 
 body {
