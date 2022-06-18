@@ -1,2 +1,2 @@
 # huddle-landing-page
-Responsive Landing Page for Huddle
+Responsive Landing Page for Huddle by Adedayo Agboola
