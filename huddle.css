@@ -26,13 +26,19 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-size: 15px;
+}
+
+
+.container {
+  padding: 65px;
 }
 
 .herosection {
   display: flex;
   background-image: url(/images/bg-hero-desktop.svg);
   flex-direction: column;
-  background-color: #ff7f7f;
+  background-color: #E6F9FF;
   background-size: cover;
   background-position: center;
 }
@@ -40,35 +46,77 @@ body {
 .hero {
   display: flex;
   flex-direction: row;
+  margin: 0 0 60px;
 }
 
-.hero .herocontent {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.logo {
+  width: 50%;
 }
 
-.hero .heroimage {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.logo img {
+width: 30%;
+}
+
+.hsbutton {
+  width: 50%;
+}
+
+.hsbutton button{
+  float: right;
+  background: #fff;
 }
 
 .submitBtn {
+  font-size: 80%;
   cursor: pointer;
   font-weight: 600;
   position: relative;
-  padding: 15px;
+  padding: 15px 35px;
   outline: none;
   border: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
 }
 
+.hero .herocontent {
+  width: 50%;
+    padding-right: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .heroimage {
+  padding-left: 65px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.herocontent h1 {
+  font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.herocontent p {
+    margin-bottom: 30px;
+}
+
+.herocontent button{
+  background: #FF51C0;
+  color: #fff;
+  font-size: 85%;
+  width: 50%;
+}
+
+
 .detailsection {
+  padding: 65px;
   margin: 65px 0;
   display: flex;
   flex-direction: row;
@@ -81,4 +129,10 @@ body {
 .huddleimage {
   width: 50%;
 }
+
+.huddleimage {
+
+}
+
+
 
