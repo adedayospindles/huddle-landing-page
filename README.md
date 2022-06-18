@@ -1,2 +1,2 @@
 # huddle-landing-page
-Huddle Responsive Landing Page
+Responsive Landing Page for Huddle
