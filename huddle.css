@@ -246,8 +246,6 @@ footer{
 .footerdiv .flogo {
   display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 140px;
   left: 90px;
 }
@@ -255,7 +253,6 @@ footer{
 .footerdiv .column p{
   display: flex;
   margin-bottom: 10px;
-
  }
 
 
