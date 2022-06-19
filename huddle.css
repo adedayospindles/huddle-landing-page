@@ -1,4 +1,4 @@
-/* Hurdle landing page Css Codes by Adedayo Agboola */
+/* Huddle landing page Css Codes by Adedayo Agboola */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -79,6 +79,7 @@ width: 30%;
   font-family: "Poppins", sans-serif;
 }
 
+
 .hero .herocontent {
   width: 50%;
     padding-right: 65px;
@@ -114,6 +115,10 @@ width: 30%;
   width: 60%;
 }
 
+.herocontent button:hover, .herocontent button:active {
+  background: #D380B6;
+}
+
 
 .detailsection {
   padding: 65px;
@@ -122,7 +127,7 @@ width: 30%;
   flex-direction: row;
   border: 1px solid #ccc;
   border-radius: 15px;
-  box-shadow: 0 2px 2px rgba(224, 222, 222, 0.1), 0 2px 1px rgb(0 0 0 / 10%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .huddlecontent,
@@ -165,8 +170,49 @@ padding-left: 30%;
   }
 
 
+ .last .boxshadow {
+  position: relative;
+  text-align: center;
+    z-index: 2;
+    padding: 75px;
+    margin: 65px auto -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+
+  .last button{
+    background: #FF51C0;
+    color: #fff;
+    font-size: 85%;
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .last button:hover, .last button:active {
+    background: #D380B6;
+  }
+
 footer{
+  font-weight: 300;
+  color: #f4f4f4;
+  padding: 150px 0 35px;
+  position: relative;
+  display: flex;
+  z-index: 1;
   background: #00252E;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.footerdiv .lastbase{
+  text-align: right;
 }
 
 
@@ -185,30 +231,47 @@ footer{
   }
 
   .huddlecontent{
-    padding: 0 40px;
+    padding: 0 40px 0 0;
   }
 
+  .huddlecontent.right {
+    padding: 0 0 0 40px;
+}
+
   .huddleimage img{
-    width: 80%;
+    width: 100%;
+    padding: 0;
     }
+
+    .huddleimage.left img {
+      padding: 0;
+  }
 
   .huddlecontent p{
     font-size: 80%;
   }
 
   .huddlecontent h3{
-    font-size: 100%;
-    line-height: 100%;
+    font-size: 20px;
+    line-height: 26px;
     margin-bottom: 15px;
   }
+
+  .huddlecontent.boxshadow h3 {
+    margin-bottom: 35px;
+}
 
 }
 
 @media screen and (max-width: 848px) {
 
+  .hero .herocontent {
+    width: 50%;
+    padding-right: 15px;
+  }
   
   .herocontent h1 {
-    font-size: 100%;
+    font-size: 22px;
     line-height: 130%;
     margin-bottom: 20px;
 }
@@ -224,34 +287,89 @@ footer{
     padding: 10px; 
   }
 
+  .footerdiv .lastbase{
+    text-align: center;
+  }
+
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
 
+  .container {
+    padding: 15px 35px;
+  }
+  
   .herocontent h1 {
-      font-size: 100%;
-      line-height: 100%;
-      margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
   }
 
   .herocontent button {
-    width: 100%;
-    padding: 10px; 
-    margin-bottom: 25px
+    width: 50%;
+    padding: 15px 30px; 
+    margin-bottom: 35px
   }
 
   .hero.intro {
     flex-direction: column;
-  }
-
-  .herocontent, .heroimage {
-    width: 100%;
-    float: none;
+    justify-content: center;
   }
 
   .herosection { 
     background-image: url(/images/bg-hero-nobile.svg);
+  }
+
+  .hero .herocontent, .hero .heroimage {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  
+.logo {
+  width: 100%;
+}
+
+.logo img {
+width: 50%;
+}
+
+.hsbutton {
+  width: 50%;
+}
+
+
+  .detailsection {
+    flex-direction: column;
+    padding: 45px;
+    justify-content: center;
+  }
+
+  .huddleimage, .huddlecontent {
+    width: 100%;
+    padding: 35px 0;
+    justify-content: center;
+    float: none !important;
+  }
+
+  .huddlecontent.right {
+    padding: 0;
+}
+
+  .huddlecontent p {
+    font-size: 100%;
+}
+
+  .huddleimage img{
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    }
+
+    .last .boxshadow {
+      padding: 65px 0;
   }
 
 }
