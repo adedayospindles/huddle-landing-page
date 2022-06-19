@@ -255,7 +255,7 @@ footer{
 .footerdiv .column p{
   display: flex;
   margin-bottom: 10px;
-  vertical-align: center;
+
  }
 
 
@@ -264,8 +264,9 @@ footer{
   display: inline-flex;
   width: 20px;
   height: 20px;
-  padding: 5px 0;
+  padding: 4px 0;
   margin-right: 15px;
+  line-height: normal;
  }
  
 
