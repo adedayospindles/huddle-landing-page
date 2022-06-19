@@ -15,7 +15,16 @@ h3 {
 
 a {
   text-decoration: none;
- 
+}
+
+
+ul, ol {
+  list-style-type: none;
+}
+
+ul li {
+  display: block;
+margin-bottom: 10px;
 }
 
 body {
@@ -208,12 +217,66 @@ footer{
   z-index: 1;
   background: #00252E;
   flex-direction: column;
-  font-size: 13px;
+  font-size: 12px;
 }
+
+.footerdiv {
+  position: relative;
+}
+
+.footerdiv .container.first{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerdiv .column {
+ width: 25%;
+ padding: 35px;
+}
+
+.footerdiv .column:first-child {
+  width: 30%;
+}
+
+.footerdiv .column:last-child {
+  width: 20%;
+}
+
+.footerdiv .flogo {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 140px;
+  left: 90px;
+}
+
+.footerdiv .column p{
+  display: flex;
+  margin-bottom: 10px;
+  vertical-align: center;
+ }
+
+
+ .footerdiv .column p i {
+  float: left;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  padding: 5px 0;
+  margin-right: 15px;
+ }
+ 
 
 .footerdiv .lastbase{
   text-align: right;
 }
+
+
+
+
+/** Media Queries **/
 
 
 @media (max-width: 980px) {
@@ -282,6 +345,10 @@ footer{
   margin-bottom: 30px;
 }
 
+.footerdiv .container.first {
+  flex-direction: column;
+}
+
 .herocontent button {
     font-size: 80%;
     padding: 10px; 
@@ -299,6 +366,7 @@ footer{
   .container {
     padding: 15px 35px;
   }
+
   
   .herocontent h1 {
     font-size: 35px;
