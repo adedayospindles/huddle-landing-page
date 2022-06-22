@@ -45,7 +45,7 @@ body {
 
 .herosection {
   display: flex;
-  background-image: url(/images/bg-hero-desktop.svg);
+  background-image: url(./images/bg-hero-desktop.svg);
   flex-direction: column;
   background-color: #E6F9FF;
   background-size: cover;
@@ -290,20 +290,20 @@ ul.hsm {
 
 
 .hsm li:first-child {
-  background-image: url(/images/icon-social.png);
+  background-image: url(./images/icon-social.png);
   background-position: left top ;
   background-repeat: no-repeat;
 }
 
 .hsm li:nth-child(2) {
-  background-image: url(/images/icon-social.png);
+  background-image: url(./images/icon-social.png);
   background-position: center top ;
   background-repeat: no-repeat;
 }
 
 
 .hsm li:last-child {
-  background-image: url(/images/icon-social.png);
+  background-image: url(./images/icon-social.png);
   background-position: right top ;
   background-repeat: no-repeat;
 }
@@ -447,7 +447,7 @@ ul.hsm {
   }
 
   .herosection { 
-    background-image: url(/images/bg-hero-nobile.svg);
+    background-image: url(./images/bg-hero-mobile.svg);
   }
 
   .hero .herocontent, .hero .heroimage {
