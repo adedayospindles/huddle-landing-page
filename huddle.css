@@ -172,11 +172,17 @@ width: 30%;
 .huddleimage img{
 width: 70%;
 padding-left: 30%;
+animation-name: animhuddle;
+animation-duration: 4s;
+animation-timing-function: ease;
 }
 
 .huddleimage.left img{
   padding: 0 70px;
-  }
+  animation-name: lefthuddle;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+}
 
 
  .last .boxshadow {
@@ -308,6 +314,16 @@ ul.hsm {
   background-repeat: no-repeat;
 }
 
+
+@keyframes animhuddle {
+  from {padding-left: 0;}
+ to {padding-left: 30%;}
+}
+
+@keyframes lefthuddle {
+  from {padding-left: 0;}
+ to {padding-left: 70px;}
+}
 
 
 /** Responsive Media Queries **/
